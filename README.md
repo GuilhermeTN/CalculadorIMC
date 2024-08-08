@@ -14,3 +14,6 @@ Este projeto é uma calculadora de Índice de Massa Corporal (IMC) desenvolvida 
 - **HTML5**
 - **CSS3**
 - **JavaScript**
+
+### Notas:
+1. O trabalho foi feito para trenamento de funções basicas e treinamento de condicional.
