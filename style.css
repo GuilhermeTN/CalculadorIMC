@@ -152,8 +152,15 @@ h1 {
         width: 90vw; 
     }
 
+    .titulo{
+        margin-left: 32%;
+    }
+    .tituloimc{
+        margin-left: 15%;
+    }
+
     .p-peso, .p-altura{
-        margin-left: 8%;
+        margin-left: 40%;
     }
 
     .IMC h2, .resultado h2 {
