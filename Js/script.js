@@ -40,22 +40,22 @@ function main() {
 
     if (formatImc < 18.5) {
         console.log("Abaixo do peso");
-        aplicarCor(".a17", ".b17", "green");
+        aplicarCor(".a17", ".b17", "#00A97F");
     } else if (formatImc >= 18.5 && formatImc <= 24.9) {
         console.log("Peso Normal");
-        aplicarCor(".a18", ".b18", "green");
+        aplicarCor(".a18", ".b18", "#00A97F");
     } else if (formatImc >= 25 && formatImc <= 29.9) {
         console.log("Sobrepeso");
-        aplicarCor(".a25", ".b25", "green");
+        aplicarCor(".a25", ".b25", "#00A97F");
     } else if (formatImc >= 30 && formatImc <= 34.9) {
         console.log("Obesidade Grau 1");
-        aplicarCor(".a30", ".b30", "green");
+        aplicarCor(".a30", ".b30", "#00A97F");
     } else if (formatImc >= 35 && formatImc <= 39.9) {
         console.log("Obesidade Grau 2");
-        aplicarCor(".a35", ".b35", "green");
+        aplicarCor(".a35", ".b35", "#00A97F");
     } else {
         console.log("Obesidade Grau 3");
-        aplicarCor(".a40", ".b40", "green");
+        aplicarCor(".a40", ".b40", "#00A97F");
     }
     
     

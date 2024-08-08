@@ -15,24 +15,24 @@ h1 {
 
 .Conteudo {
     background-color: white;
-    margin: 5vh auto; /* Centraliza o conteúdo verticalmente e horizontalmente */
+    margin: 5vh auto; 
     padding: 2vh 2vw;
-    width: 50vw; /* Ajusta a largura para 50% da tela */
-    max-width: 600px; /* Define uma largura máxima para telas maiores */
-    min-width: 300px; /* Define uma largura mínima para telas menores */
-    border: 4px solid #3f3d37; /* Borda inicial */
+    width: 50vw; 
+    max-width: 600px;
+    min-width: 300px; 
+    border: 4px solid #3f3d37; 
     border-radius: 50px;
-    box-sizing: border-box; /* Garante que padding seja incluído no tamanho total */
+    box-sizing: border-box; 
 }
 
 .campoIMC {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Permite que os elementos quebrem linha em telas menores */
+    flex-wrap: wrap;
 }
 
 .IMC, .resultado {
-    width: 45%; /* Ajusta a largura para que ocupem 45% do espaço disponível */
+    width: 45%;
     padding: 0px;
     margin: 4px;
 }
@@ -151,15 +151,21 @@ h1 {
         width: 90vw; 
     }
 
+    .p-peso, .p-altura{
+        margin-left: 8%;
+    }
+
     .IMC h2, .resultado h2 {
         font-size: 18px; 
     }
 
     .calculo input {
-        width: 80%; 
+        width: 70%;
+        margin-left: 8%;
     }
 
     .calculo button {
-        width: 80%; 
+        width: 80%;
+        margin-left: 8%;
     }
 }
