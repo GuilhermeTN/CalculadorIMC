@@ -147,6 +147,37 @@ h1 {
     }
 }
 
+@media (max-width: 500px) {
+    .Conteudo {
+        width: 90vw; 
+    }
+
+    .titulo{
+        margin-left: 20%;
+    }
+    .tituloimc{
+        margin-left: 10%;
+    }
+
+    .p-peso, .p-altura{
+        margin-left: 40%;
+    }
+
+    .IMC h2, .resultado h2 {
+        font-size: 18px; 
+    }
+
+    .calculo input {
+        width: 70%;
+        margin-left: 8%;
+    }
+
+    .calculo button {
+        width: 80%;
+        margin-left: 8%;
+    }
+}
+
 @media (max-width: 480px) {
     .Conteudo {
         width: 90vw; 
