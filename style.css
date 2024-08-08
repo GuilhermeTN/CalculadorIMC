@@ -1,0 +1,165 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #007A78;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: black;
+}
+
+.Conteudo {
+    background-color: white;
+    margin: 5vh auto; /* Centraliza o conteúdo verticalmente e horizontalmente */
+    padding: 2vh 2vw;
+    width: 50vw; /* Ajusta a largura para 50% da tela */
+    max-width: 600px; /* Define uma largura máxima para telas maiores */
+    min-width: 300px; /* Define uma largura mínima para telas menores */
+    border: 4px solid #3f3d37; /* Borda inicial */
+    border-radius: 50px;
+    box-sizing: border-box; /* Garante que padding seja incluído no tamanho total */
+}
+
+.campoIMC {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que os elementos quebrem linha em telas menores */
+}
+
+.IMC, .resultado {
+    width: 45%; /* Ajusta a largura para que ocupem 45% do espaço disponível */
+    padding: 0px;
+    margin: 4px;
+}
+
+.IMC h2, .resultado h2 {
+    margin-top: 0;
+}
+
+.IMC p, .resultado p {
+    margin: 5px 0;
+}
+
+.calculo {
+    margin-top: 20px;
+}
+
+.calculo button {
+    --color: #00A97F;
+    --color2: rgb(10, 25, 30);
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+    margin-top: 15px;
+}
+
+.calculo button::after, .calculo button::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+}
+
+.calculo button::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.calculo button:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.calculo button:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+}
+
+.calculo button:hover {
+    color: var(--color2);
+}
+
+.btn:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+}
+
+.calculo input {
+    display: flex;
+    width: 210px;
+    height: 30px;
+    padding: 0 16px;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid #007A78;
+    color: black;
+    animation: shake_541 0.14s 3;
+    align-items: center;
+    justify-content: center;
+}
+
+.num {
+    font-size: 45px; 
+    color: black;
+    margin-left: 17%;
+    margin-bottom: -31%;
+}
+
+@media (max-width: 940px) {
+    .Conteudo {
+        width: 70vw; 
+    }
+
+    .campoIMC {
+        flex-direction: column;
+    }
+
+    .IMC, .resultado {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    .num {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .Conteudo {
+        width: 90vw; 
+    }
+
+    .IMC h2, .resultado h2 {
+        font-size: 18px; 
+    }
+
+    .calculo input {
+        width: 100%; 
+    }
+
+    .calculo button {
+        width: 100%; 
+    }
+}
