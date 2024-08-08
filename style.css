@@ -156,10 +156,10 @@ h1 {
     }
 
     .calculo input {
-        width: 100%; 
+        width: 80%; 
     }
 
     .calculo button {
-        width: 100%; 
+        width: 80%; 
     }
 }
